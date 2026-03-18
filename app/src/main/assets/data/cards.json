@@ -1,0 +1,314 @@
+[
+  {
+    "id": "hero_rook",
+    "name": "Рук",
+    "type": "HERO_SHEET",
+    "imageAsset": "images/cards/hero_rook.png",
+    "description": "Могучий воин в тяжёлой броне. Непробиваемый страж, специализирующийся на защите союзников и удержании врагов.",
+    "stats": { "hp": 14, "attack": 4, "defense": 4, "speed": 2, "slots": 2 }
+  },
+  {
+    "id": "hero_ezre",
+    "name": "Эзра",
+    "type": "HERO_SHEET",
+    "imageAsset": "images/cards/hero_ezre.png",
+    "description": "Ловкий лучник с острым зрением. Мастер дальнего боя и скрытного передвижения.",
+    "stats": { "hp": 10, "attack": 4, "defense": 1, "speed": 5, "slots": 2 }
+  },
+  {
+    "id": "hero_imrani",
+    "name": "Имрани",
+    "type": "HERO_SHEET",
+    "imageAsset": "images/cards/hero_imrani.png",
+    "description": "Универсальный боец с балансом всех характеристик. Легко адаптируется к любой ситуации на поле боя.",
+    "stats": { "hp": 12, "attack": 3, "defense": 3, "speed": 4, "slots": 2 }
+  },
+  {
+    "id": "hero_caleb",
+    "name": "Калеб",
+    "type": "HERO_SHEET",
+    "imageAsset": "images/cards/hero_caleb.png",
+    "description": "Хитроумный плут с ядовитыми лезвиями. Наносит быстрые удары из тени.",
+    "stats": { "hp": 9, "attack": 3, "defense": 2, "speed": 5, "slots": 3 }
+  },
+  {
+    "id": "weapon_iron_sword",
+    "name": "Железный меч",
+    "type": "WEAPON",
+    "imageAsset": "images/cards/weapon_iron_sword.png",
+    "description": "Надёжный одноручный меч. Стандартное оружие воина.",
+    "stats": { "hp": 0, "attack": 3, "defense": 0, "speed": 0, "slots": 1 }
+  },
+  {
+    "id": "weapon_war_hammer",
+    "name": "Боевой молот",
+    "type": "WEAPON",
+    "imageAsset": "images/cards/weapon_war_hammer.png",
+    "description": "Двуручный молот с сокрушительной силой. Пробивает броню врага.",
+    "stats": { "hp": 0, "attack": 5, "defense": 0, "speed": -1, "slots": 0 }
+  },
+  {
+    "id": "weapon_dagger",
+    "name": "Кинжал",
+    "type": "WEAPON",
+    "imageAsset": "images/cards/weapon_dagger.png",
+    "description": "Быстрый лёгкий клинок. Идеален для двойного удара.",
+    "stats": { "hp": 0, "attack": 2, "defense": 0, "speed": 1, "slots": 0 }
+  },
+  {
+    "id": "weapon_shortbow",
+    "name": "Короткий лук",
+    "type": "WEAPON",
+    "imageAsset": "images/cards/weapon_shortbow.png",
+    "description": "Лёгкий лук для ближней дистанции. Хорошая скорострельность.",
+    "stats": { "hp": 0, "attack": 3, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "weapon_longbow",
+    "name": "Длинный лук",
+    "type": "WEAPON",
+    "imageAsset": "images/cards/weapon_longbow.png",
+    "description": "Дальнобойный лук. Эффективен на большом расстоянии.",
+    "stats": { "hp": 0, "attack": 4, "defense": 0, "speed": -1, "slots": 0 }
+  },
+  {
+    "id": "weapon_staff",
+    "name": "Посох силы",
+    "type": "WEAPON",
+    "imageAsset": "images/cards/weapon_staff.png",
+    "description": "Магический посох. Усиливает заклинания и даёт бонус к защите.",
+    "stats": { "hp": 0, "attack": 2, "defense": 1, "speed": 0, "slots": 1 }
+  },
+  {
+    "id": "weapon_poison_blade",
+    "name": "Ядовитое лезвие",
+    "type": "WEAPON",
+    "imageAsset": "images/cards/weapon_poison_blade.png",
+    "description": "Клинок, смоченный ядом. Враги отравленные этим оружием теряют ПЗ каждый ход.",
+    "stats": { "hp": 0, "attack": 2, "defense": 0, "speed": 1, "slots": 0 }
+  },
+  {
+    "id": "armor_leather",
+    "name": "Кожаная броня",
+    "type": "ARMOR",
+    "imageAsset": "images/cards/armor_leather.png",
+    "description": "Лёгкая броня из обработанной кожи. Не сковывает движения.",
+    "stats": { "hp": 0, "attack": 0, "defense": 2, "speed": 0, "slots": 1 }
+  },
+  {
+    "id": "armor_chain",
+    "name": "Кольчуга",
+    "type": "ARMOR",
+    "imageAsset": "images/cards/armor_chain.png",
+    "description": "Кольчужный доспех средней защиты. Хорошо держит удары рубящего оружия.",
+    "stats": { "hp": 2, "attack": 0, "defense": 3, "speed": -1, "slots": 0 }
+  },
+  {
+    "id": "armor_plate",
+    "name": "Пластинчатый доспех",
+    "type": "ARMOR",
+    "imageAsset": "images/cards/armor_plate.png",
+    "description": "Тяжёлая пластинчатая броня. Максимальная защита за счёт скорости.",
+    "stats": { "hp": 3, "attack": 0, "defense": 5, "speed": -2, "slots": 0 }
+  },
+  {
+    "id": "armor_robes",
+    "name": "Мантия мага",
+    "type": "ARMOR",
+    "imageAsset": "images/cards/armor_robes.png",
+    "description": "Магическое одеяние, заряженное защитными чарами.",
+    "stats": { "hp": 1, "attack": 0, "defense": 1, "speed": 0, "slots": 2 }
+  },
+  {
+    "id": "trinket_lucky_amulet",
+    "name": "Амулет удачи",
+    "type": "TRINKET",
+    "imageAsset": "images/cards/trinket_lucky_amulet.png",
+    "description": "Приносит удачу в трудный момент. Один раз за встречу позволяет перебросить кубик.",
+    "stats": { "hp": 0, "attack": 0, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "trinket_protection_ring",
+    "name": "Кольцо защиты",
+    "type": "TRINKET",
+    "imageAsset": "images/cards/trinket_protection_ring.png",
+    "description": "Магическое кольцо, дающее постоянный бонус к защите и запасу жизни.",
+    "stats": { "hp": 2, "attack": 0, "defense": 1, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "trinket_speed_boots",
+    "name": "Сапоги скорости",
+    "type": "TRINKET",
+    "imageAsset": "images/cards/trinket_speed_boots.png",
+    "description": "Зачарованные сапоги, значительно увеличивающие скорость передвижения.",
+    "stats": { "hp": 0, "attack": 0, "defense": 0, "speed": 2, "slots": 0 }
+  },
+  {
+    "id": "relic_ancient_tome",
+    "name": "Древний фолиант",
+    "type": "RELIC",
+    "imageAsset": "images/cards/relic_ancient_tome.png",
+    "description": "Книга с древними заклинаниями. Даёт бонус к атаке при использовании магии.",
+    "stats": { "hp": 0, "attack": 2, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "relic_endurance_pendant",
+    "name": "Медальон стойкости",
+    "type": "RELIC",
+    "imageAsset": "images/cards/relic_endurance_pendant.png",
+    "description": "Мощный медальон, значительно увеличивающий максимальный запас жизни.",
+    "stats": { "hp": 4, "attack": 0, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "relic_shadow_cloak",
+    "name": "Плащ теней",
+    "type": "RELIC",
+    "imageAsset": "images/cards/relic_shadow_cloak.png",
+    "description": "Мистический плащ из теневой ткани. Позволяет один раз за ход уклониться от атаки.",
+    "stats": { "hp": 0, "attack": 0, "defense": 2, "speed": 1, "slots": 0 }
+  },
+  {
+    "id": "upgrade_sharp_edge",
+    "name": "Заточка",
+    "type": "ITEM_UPGRADE",
+    "imageAsset": "images/cards/upgrade_sharp_edge.png",
+    "description": "Улучшение для оружия: дополнительная заточка лезвия. +1 к атаке.",
+    "stats": { "hp": 0, "attack": 1, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "upgrade_reinforcement",
+    "name": "Усиление",
+    "type": "ITEM_UPGRADE",
+    "imageAsset": "images/cards/upgrade_reinforcement.png",
+    "description": "Улучшение для брони: дополнительные пластины. +1 к защите.",
+    "stats": { "hp": 0, "attack": 0, "defense": 1, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "upgrade_enchantment",
+    "name": "Зачарование",
+    "type": "ITEM_UPGRADE",
+    "imageAsset": "images/cards/upgrade_enchantment.png",
+    "description": "Магическое зачарование предмета. +1 к атаке и защите.",
+    "stats": { "hp": 0, "attack": 1, "defense": 1, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "backpack_health_potion",
+    "name": "Зелье здоровья",
+    "type": "BACKPACK",
+    "imageAsset": "images/cards/backpack_health_potion.png",
+    "description": "Стандартное зелье исцеления. Восстанавливает 4 единицы жизни.",
+    "stats": { "hp": 4, "attack": 0, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "backpack_torch",
+    "name": "Факел",
+    "type": "BACKPACK",
+    "imageAsset": "images/cards/backpack_torch.png",
+    "description": "Освещает тёмные области. Горит 3 хода. Может поджечь объекты.",
+    "stats": { "hp": 0, "attack": 1, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "backpack_rope",
+    "name": "Верёвка",
+    "type": "BACKPACK",
+    "imageAsset": "images/cards/backpack_rope.png",
+    "description": "Прочная верёвка. Используется для подъёма, создания ловушек и связывания.",
+    "stats": { "hp": 0, "attack": 0, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "backpack_antidote",
+    "name": "Противоядие",
+    "type": "BACKPACK",
+    "imageAsset": "images/cards/backpack_antidote.png",
+    "description": "Снимает эффект яда. Восстанавливает 1 ПЗ.",
+    "stats": { "hp": 1, "attack": 0, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "backpack_lockpick",
+    "name": "Отмычка",
+    "type": "BACKPACK",
+    "imageAsset": "images/cards/backpack_lockpick.png",
+    "description": "Набор отмычек для вскрытия замков без ключа.",
+    "stats": { "hp": 0, "attack": 0, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "disc_shield_bash",
+    "name": "Удар щитом",
+    "type": "DISCIPLINE",
+    "imageAsset": "images/cards/disc_shield_bash.png",
+    "description": "Мощный удар краем щита. Отбрасывает врага на 1 клетку и оглушает его на 1 ход.",
+    "stats": { "hp": 0, "attack": 2, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "disc_war_cry",
+    "name": "Боевой клич",
+    "type": "DISCIPLINE",
+    "imageAsset": "images/cards/disc_war_cry.png",
+    "description": "Вдохновляет всех союзников. +1 к атаке для всей группы до конца хода.",
+    "stats": { "hp": 0, "attack": 1, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "disc_evasion",
+    "name": "Уклонение",
+    "type": "DISCIPLINE",
+    "imageAsset": "images/cards/disc_evasion.png",
+    "description": "Молниеносное уклонение от атаки. Реакция: использовать вне очереди при атаке на вас.",
+    "stats": { "hp": 0, "attack": 0, "defense": 3, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "disc_backstab",
+    "name": "Удар в спину",
+    "type": "DISCIPLINE",
+    "imageAsset": "images/cards/disc_backstab.png",
+    "description": "Смертельный удар из тени. Наносит двойной урон, если вы атакуете со стороны спины врага.",
+    "stats": { "hp": 0, "attack": 4, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "disc_healing_touch",
+    "name": "Исцеляющее прикосновение",
+    "type": "DISCIPLINE",
+    "imageAsset": "images/cards/disc_healing_touch.png",
+    "description": "Накладывает руки на союзника, исцеляя его на 3 единицы жизни.",
+    "stats": { "hp": 3, "attack": 0, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "disc_power_strike",
+    "name": "Мощный удар",
+    "type": "DISCIPLINE",
+    "imageAsset": "images/cards/disc_power_strike.png",
+    "description": "Концентрируете силу в одном ударе. +3 к атаке, но минус 1 к скорости в следующий ход.",
+    "stats": { "hp": 0, "attack": 3, "defense": -1, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "disc_shadow_step",
+    "name": "Шаг в тень",
+    "type": "DISCIPLINE",
+    "imageAsset": "images/cards/disc_shadow_step.png",
+    "description": "Телепортация в тень рядом с целью. Перемещение через занятые клетки, без атак реакции.",
+    "stats": { "hp": 0, "attack": 0, "defense": 0, "speed": 3, "slots": 0 }
+  },
+  {
+    "id": "disc_arcane_bolt",
+    "name": "Магический заряд",
+    "type": "DISCIPLINE",
+    "imageAsset": "images/cards/disc_arcane_bolt.png",
+    "description": "Выпускает сгусток магической энергии. Дальнобойная атака, игнорирует физическую броню.",
+    "stats": { "hp": 0, "attack": 4, "defense": 0, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "disc_taunt",
+    "name": "Насмешка",
+    "type": "DISCIPLINE",
+    "imageAsset": "images/cards/disc_taunt.png",
+    "description": "Заставляет всех видимых врагов атаковать только вас до конца их хода.",
+    "stats": { "hp": 0, "attack": 0, "defense": 1, "speed": 0, "slots": 0 }
+  },
+  {
+    "id": "disc_rapid_shot",
+    "name": "Быстрый выстрел",
+    "type": "DISCIPLINE",
+    "imageAsset": "images/cards/disc_rapid_shot.png",
+    "description": "Серия быстрых выстрелов. Атакует дважды с уменьшенным уроном.",
+    "stats": { "hp": 0, "attack": 2, "defense": 0, "speed": 1, "slots": 0 }
+  }
+]
