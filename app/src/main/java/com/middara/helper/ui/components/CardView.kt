@@ -175,12 +175,18 @@ private fun StatChip(label: String, value: Int) {
 fun cardTypeColor(cardType: CardType): Color = when (cardType) {
     CardType.HERO_SHEET -> CardColorHeroSheet
     CardType.WEAPON -> CardColorWeapon
+    CardType.WEAPON_UPGRADE -> CardColorWeaponUpgrade
     CardType.ARMOR -> CardColorArmor
+    CardType.ARMOR_UPGRADE -> CardColorArmorUpgrade
     CardType.TRINKET -> CardColorTrinket
     CardType.RELIC -> CardColorRelic
+    CardType.ACCESSORY -> CardColorAccessory
     CardType.ITEM_UPGRADE -> CardColorUpgrade
     CardType.BACKPACK -> CardColorBackpack
     CardType.DISCIPLINE -> CardColorDiscipline
+    CardType.CONSUMABLE -> CardColorConsumable
+    CardType.FAMILIAR -> CardColorFamiliar
+    CardType.COMPANION -> CardColorCompanion
 }
 
 @Composable
@@ -200,5 +206,56 @@ fun CardStatsSummary(card: Card, modifier: Modifier = Modifier) {
             color = TextSecondary,
             modifier = modifier
         )
+    }
+}
+
+@Composable
+fun EquipmentBonusSummary(
+    bonusStats: com.middara.helper.data.model.CardStats,
+    modifier: Modifier = Modifier
+) {
+    val entries = buildList {
+        if (bonusStats.hp != 0) add("ПЗ" to bonusStats.hp)
+        if (bonusStats.attack != 0) add("АТК" to bonusStats.attack)
+        if (bonusStats.defense != 0) add("ЗЩ" to bonusStats.defense)
+        if (bonusStats.speed != 0) add("СКР" to bonusStats.speed)
+        if (bonusStats.slots != 0) add("Слоты" to bonusStats.slots)
+    }
+
+    if (entries.isEmpty()) {
+        Text(
+            text = "Нет бонусов",
+            fontSize = 11.sp,
+            color = TextSecondary,
+            modifier = modifier
+        )
+        return
+    }
+
+    androidx.compose.foundation.layout.Column(
+        modifier = modifier,
+        verticalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(4.dp)
+    ) {
+        entries.chunked(3).forEach { row ->
+            androidx.compose.foundation.layout.Row(
+                horizontalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(12.dp)
+            ) {
+                row.forEach { (label, value) ->
+                    val color = when {
+                        value > 0 -> androidx.compose.ui.graphics.Color(0xFF4CAF50)
+                        value < 0 -> androidx.compose.ui.graphics.Color(0xFFE57373)
+                        else -> TextSecondary
+                    }
+                    val sign = if (value > 0) "+" else ""
+                    androidx.compose.foundation.layout.Row(
+                        verticalAlignment = androidx.compose.ui.Alignment.CenterVertically,
+                        horizontalArrangement = androidx.compose.foundation.layout.Arrangement.spacedBy(2.dp)
+                    ) {
+                        Text(label, fontSize = 10.sp, color = TextSecondary)
+                        Text("$sign$value", fontSize = 12.sp, color = color, fontWeight = androidx.compose.ui.text.font.FontWeight.Bold)
+                    }
+                }
+            }
+        }
     }
 }
